@@ -5,20 +5,284 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólio | Paulo Roberto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/resumos.css">
+    <link rel="stylesheet" href="assets/css/atributos.css">
+    <link rel="stylesheet" href="assets/css/rodape.css">
+    <link rel="stylesheet" href="assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/menu/menu.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-titulo.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-lista.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-item.css">
+    <link rel="stylesheet" href="assets/css/menu/menu-link.css">
+    <link rel="stylesheet" href="assets/css/resumo/resumo.css">
+    <link rel="stylesheet" href="assets/css/resumo/resumo-imagem.css">
+    <link rel="stylesheet" href="assets/css/resumo/resumo-titulo.css">
+    <link rel="stylesheet" href="assets/css/resumo/resumo-descricao.css">
+    <link rel="stylesheet" href="assets/css/resumo/resumo-lista.css">
+    <link rel="stylesheet" href="assets/css/resumo/resumo-item.css">
+    <link rel="stylesheet" href="assets/css/resumo/resumo-link.css">
+    <link rel="stylesheet" href="assets/css/sobre/sobre.css">
+    <link rel="stylesheet" href="assets/css/sobre/sobre-bloco.css">
+    <link rel="stylesheet" href="assets/css/sobre/sobre-titulo.css">
+    <link rel="stylesheet" href="assets/css/sobre/sobre-descricao.css">
+    <link rel="stylesheet" href="assets/css/skill/skill.css">
+    <link rel="stylesheet" href="assets/css/skill/skill-titulo.css">
+    <link rel="stylesheet" href="assets/css/skill/skill-lista.css">
+    <link rel="stylesheet" href="assets/css/skill/skill-item.css">
+    <link rel="stylesheet" href="assets/css/skill/skill-imagem.css">
+    <link rel="stylesheet" href="assets/css/formacao/formacao.css">
+    <link rel="stylesheet" href="assets/css/formacao/formacao-titulo.css">
+    <link rel="stylesheet" href="assets/css/formacao/formacao-escolas.css">
+    <link rel="stylesheet" href="assets/css/formacao/formacao-bloco.css">
+    <link rel="stylesheet" href="assets/css/formacao/formacao-bloco-imagem.css">
+    <link rel="stylesheet" href="assets/css/formacao/formacao-bloco-titulo.css">
+    <link rel="stylesheet" href="assets/css/formacao/formacao-bloco-descricao.css">
+    <link rel="stylesheet" href="assets/css/experiencia/experiencia.css">
+    <link rel="stylesheet" href="assets/css/experiencia/experiencia-titulo.css">
+    <link rel="stylesheet" href="assets/css/experiencia/experiencia-projetos.css">
+    <link rel="stylesheet" href="assets/css/experiencia/experiencia-bloco.css">
+    <link rel="stylesheet" href="assets/css/experiencia/experiencia-frame.css">
+    <link rel="stylesheet" href="assets/css/experiencia/experiencia-bloco-imagem.css">
+    <link rel="stylesheet" href="assets/css/experiencia/experiencia-bloco-info.css">
+    <link rel="stylesheet" href="assets/css/experiencia/experiencia-bloco-titulo.css">
+    <link rel="stylesheet" href="assets/css/experiencia/experiencia-bloco-descricao.css">
+    <link rel="stylesheet" href="assets/css/experiencia/experiencia-bloco-botao.css">
+    <link rel="stylesheet" href="assets/css/contato/contato.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-bloco.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-frame.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-info.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-titulo.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-descricao.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-cabecalho.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-botao.css">
+    <link rel="stylesheet" href="assets/css/contato/contato-form.css">
+    <link rel="stylesheet" href="assets/css/criador/criador.css">
+    <link rel="stylesheet" href="assets/css/criador/criador-descricao.css">
 </head>
 
 <body>
-    <header>
+    <header class="cabecalho">
+        <nav class="menu">
+            <h1 class="menu__titulo"><img src="assets/img/group.png" alt=""> Paulo Roberto</h1>
+            <ul class="menu__lista">
+                <li class="menu__item"><a class="menu__link" href="#sobre">Sobre mim</a></li>
+                <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+                <li class="menu__item"><a class="menu__link" href="#hobbies">Hobbies</a></li>
+                <li class="menu__item"><a class="menu__link" href="#formacoes">Formação</a></li>
+                <li class="menu__item"><a class="menu__link" href="#projetos">Projetos</a></li>
+                <li class="menu__item"><a class="menu__link"
+                        href="#contato"><strong>paulo.roberto.skt8@gmail.com</strong></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="resumos">
+            <div class="resumo">
+                <h2 class="resumo__titulo">Olá, meu nome é Paulo Roberto tenho 22 anos, sou brasileiro e sou um
+                    desenvolvedor Front-End!</h2>
+                <p class="resumo__descricao">Eu sou formado como Técnico em Informática e atualmente estou cursando
+                    superior em Análise e desenvolvimento de sistemas. Também conclui um curso de desenvolvimento
+                    fron-end pelo Senai-DF e estou participando do projeto Oracle One na Alura.</p>
+                <ul class="resumo__lista">
+                    <li class="resumo__item"><a class="resumo__link" href="https://github.com/paulorag"
+                            target="_blank">GitHub <img src="assets/img/arrow.png" alt="Vetor de uma flecha"></a></li>
+                    <li class="resumo__item"><a class="resumo__link" href="https://www.linkedin.com/in/paulorag/"
+                            target="_blank">Linkedin <img src="assets/img/arrow.png" alt="Vetor de uma flecha"></a></li>
+                </ul>
+            </div>
+            <img class="resumo__imagem" src="assets/img/profile.jpeg" alt="Minha foto">
+        </div>
 
     </header>
-    
-    <main>
 
+    <main>
+        <section class="sobre" id="sobre">
+            <div class="sobre__bloco">
+                <h2 class="sobre__titulo">Sobre mim</h2>
+                <p class="sobre__descricao">Atualmente sou um estudante de Analise e desenvolvimento de sistemas e estou
+                    focando em desenvolvimento front-end onde estou trabalhando com as tecnologias HTML, CSS, BootStrap
+                    e a linguagem de programação JavaScript em projetos de estudo que venho publicando no meu GitHub.
+                </p>
+                <p class="sobre__descricao">Sou uma pessoa que aprende rápido a prática, tenho responsabilidade,
+                    agilidade e foco. Tenho facilidade de trabalhar sobre pressão, com prazos e em equipe. Aprendo
+                    rápido novos sistemas e tecnologias. Já trabalhei também com aplicativos de escritório como Excel,
+                    PowerPoint, Word, Outlook, também trabalhei com BI e SAP.</p>
+            </div>
+        </section>
+        <section class="atributos">
+            <section class="skill" id="skills">
+                <h2 class="skill__titulo">Skills</h2>
+                <ul class="skill__lista">
+                    <li class="skill__item"><img class="skill__imagem" src="assets/img/icons/html5-original.svg"
+                            alt="Icone Html">HTML</li>
+                    <li class="skill__item"><img class="skill__imagem" src="assets/img/icons/css3-original.svg"
+                            alt="Icone CSS">CSS</li>
+                    <li class="skill__item"><img class="skill__imagem" src="assets/img/icons/bootstrap-original.svg"
+                            alt="Icone BootStrap">BootStrap</li>
+                    <li class="skill__item"><img class="skill__imagem" src="assets/img/icons/javascript-original.svg"
+                            alt="Icone JavaScript">JavaScript</li>
+                    <li class="skill__item"><img class="skill__imagem" src="assets/img/icons/react-original.svg"
+                            alt="Icone ReactJs">ReactJs</li>
+                    <li class="skill__item"><img class="skill__imagem" src="assets/img/icons/git-original.svg"
+                            alt="Icone Git">Git</li>
+                </ul>
+            </section>
+            <!-- <section class="hobbie" id="hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li><img src="" alt=""></li>
+                </ul>
+            </section> -->
+            <section class="formacao" id="formacoes">
+                <h2 class="formacao__titulo">Formação Academica</h2>
+                <div class="formacao__escolas">
+                    <div class="formacao__bloco">
+                        <img class="formacao__bloco_imagem" src="assets/img/logo/logo-etb.jpg"
+                            alt="Logo da Escola Técnica de Brasília">
+                        <h3 class="formacao__bloco_titulo">Técnico em Informática</h3>
+                        <p class="formacao__bloco_descricao">2020 - ETB</p>
+                    </div>
+                    <div class="formacao__bloco">
+                        <img class="formacao__bloco_imagem" src="assets/img/logo/logo-estacio.png"
+                            alt="Logo da Universidade Estácio de Sá">
+                        <h3 class="formacao__bloco_titulo">Análise e desenvolvimento de sistemas</h3>
+                        <p class="formacao__bloco_descricao">Em Andamento - Estácio</p>
+                    </div>
+                    <div class="formacao__bloco">
+                        <img class="formacao__bloco_imagem" src="assets/img/logo/logo-alura.png" alt="Logo da Alura">
+                        <h3 class="formacao__bloco_titulo">Oracle Next Education F2 T3</h3>
+                        <p class="formacao__bloco_descricao">Em Andamento - Alura</p>
+                    </div>
+                    <div class="formacao__bloco">
+                        <img class="formacao__bloco_imagem" src="assets/img/logo/logo-senai.png" alt="Logo do Senai">
+                        <h3 class="formacao__bloco_titulo">Desenvolvimento Front-End</h3>
+                        <p class="formacao__bloco_descricao">2022 - Senai-DF</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="experiencia" id="projetos">
+            <h2 class="experiencia__titulo">Experiência Profissional</h2>
+            <div class="experiencia__projetos">
+                <div class="experiencia__bloco">
+                    <div class="experiencia__bloco_frame">
+                        <img class="experiencia__bloco_imagem" src="assets/img/projetos/codificador.png"
+                            alt="Imagem do Jogo da Codificador de texto">
+                    </div>
+                    <div class="experiencia__bloco_info">
+                        <h3 class="experiencia__bloco_titulo">Decodificador de texto criado com HTML, CSS e JavaScript
+                        </h3>
+                        <p class="experiencia__bloco_descricao">Challenge Alura/Oracle Codificador</p>
+                        <div class="experiencia__bloco_botao">
+                            <a class="experiencia__bloco_botao--bordaAzul"
+                                href="https://github.com/paulorag/codificador-text" target="_blank">Repositório</a>
+                            <a class="experiencia__bloco_botao--fundoAzul"
+                                href="https://paulorag.github.io/codificador-text/" target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="experiencia__bloco--reverse">
+                    <div class="experiencia__bloco_frame">
+                        <img class="experiencia__bloco_imagem" src="assets/img/projetos/jogo-forca.png"
+                            alt="Imagem do Jogo da forca">
+                    </div>
+                    <div class="experiencia__bloco_info">
+                        <h3>Jogo criado com HTML, CSS e JavaScript</h3>
+                        <p>Challenge Alura/Oracle Jogo da forca</p>
+                        <div class="experiencia__bloco_botao">
+                            <a class="experiencia__bloco_botao--bordaAzul" href="https://github.com/paulorag/jogo-forca"
+                                target="_blank">Repositório</a>
+                            <a class="experiencia__bloco_botao--fundoAzul" href="https://paulorag.github.io/jogo-forca/"
+                                target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="experiencia__bloco">
+                    <div class="experiencia__bloco_frame">
+                        <img class="experiencia__bloco_imagem" src="assets/img/projetos/projeto-android.png"
+                            alt="Imagem do projeto sobre o Android">
+                    </div>
+                    <div class="experiencia__bloco_info">
+                        <h3 class="experiencia__bloco_titulo">Projeto sobre a histório do androis</h3>
+                        <p class="experiencia__bloco_descricao">Projeto de Estudo/Curso em Video</p>
+                        <div class="experiencia__bloco_botao">
+                            <a class="experiencia__bloco_botao--bordaAzul"
+                                href="https://github.com/paulorag/projeto-android" target="_blank">Repositório</a>
+                            <a class="experiencia__bloco_botao--fundoAzul"
+                                href="https://paulorag.github.io/projeto-android/" target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="experiencia__bloco--reverse">
+                    <div class="experiencia__bloco_frame">
+                        <img class="experiencia__bloco_imagem" src="assets/img/projetos/projeto-cordel.png"
+                            alt="Imagem do projeto cordel moderno de Milton Duarte">
+                    </div>
+                    <div class="experiencia__bloco_info">
+                        <h3>Projeto sobre o Cordel Mordel de Milton Duarte</h3>
+                        <p>Projeto de Estudo/Curso em Video</p>
+                        <div class="experiencia__bloco_botao">
+                            <a class="experiencia__bloco_botao--bordaAzul"
+                                href="https://github.com/paulorag/projeto-cordel" target="_blank">Repositório</a>
+                            <a class="experiencia__bloco_botao--fundoAzul"
+                                href="https://paulorag.github.io/projeto-cordel/" target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="experiencia__bloco">
+                    <div class="experiencia__bloco_frame">
+                        <img class="experiencia__bloco_imagem" src="assets/img/projetos/projeto-lanchonete.png"
+                            alt="Imagem do projeto final do curso de desenvolvimento front-end do Senai-DF">
+                    </div>
+                    <div class="experiencia__bloco_info">
+                        <h3 class="experiencia__bloco_titulo">Projeto de uma lanchonete</h3>
+                        <p class="experiencia__bloco_descricao">Projeto final/Senai-DF</p>
+                        <div class="experiencia__bloco_botao">
+                            <a class="experiencia__bloco_botao--bordaAzul"
+                                href="https://github.com/paulorag/project_lanchonete" target="_blank">Repositório</a>
+                            <a class="experiencia__bloco_botao--fundoAzul"
+                                href="https://paulorag.github.io/project_lanchonete/" target="_blank">Ver demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-
+    <footer class="rodape">
+        <section class="contato" id="contato">
+            <div class="contato__bloco">
+                <div class="contato__frame"></div>
+                <div class="contato__info">
+                    <div class="contato__cabecalho">
+                        <h2 class="contato__titulo">Contato</h2>
+                        <p class="contato__descricao">Quer entrar em contato comigo?</p>
+                        <p class="contato__descricao">Preencha o formulario e entrarei em contato o mais rapido possivel
+                        </p>
+                    </div>
+                    <div class="contato__form">
+                        <form action="">
+                            <input class="contato__form--nome" type="text" name="nome" id="nome" placeholder="Nome" required>
+                            <input class="contato__form--email" type="email" name="email" id="email" placeholder="E-mail" required>
+                            <input class="contato__form--assunto" type="text" name="assunto" id="assunto" placeholder="Assunto" required>
+                            <input class="contato__form--mensagem" type="text" name="mensagem" id="mensagem" placeholder="Mensagem" required>
+                        </form>
+                    </div>
+                    <div class="contato__botao">
+                        <a href="#">Enviar Mensagem</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="criador">
+            <p class="criador__descricao">Desenvolvido por Paulo Roberto - 2022</p>
+        </section>
     </footer>
 </body>
 
