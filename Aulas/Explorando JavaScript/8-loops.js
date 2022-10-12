@@ -13,15 +13,27 @@ console.log(listaDeDestinos);
 const podeComprar = idadeComprador >= 18 || estaAcompanhado == true;
 
 let contador = 0;
-
-while (contador < listaDeDestinos.length){
-    console.log(listaDeDestinos[contador]);
-    break;
+let destinoExiste = false;
+while (contador < listaDeDestinos.length) {
+    if (listaDeDestinos[contador] == destino) {
+        console.log('Destino existe');
+        destinoExiste = true;
+        break;
+    }
+    contador += 1;
 }
 
-console.log('Embarque: \n\n');
-if ((idadeComprador >= 18 || estaAcompanhado == true) && temPassagemComprada == true) {
-    console.log('Boa Viagem');
+console.log('Seu destino existe: ', destinoExiste);
+
+if (podeComprar && destinoExiste) {
+    console.log('Boa Viagem!');
 } else {
-    console.log('Você não pode embarcar');
+    console.log('Desculpe tivemos um erro!');
+}
+
+for (let i = 0; i < listaDeDestinos.length; i++) {
+    if (listaDeDestinos[i] == destino) {
+        console.log('Destino existe');
+        destinoExiste = true;
+    }
 }
