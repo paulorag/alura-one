@@ -18,18 +18,18 @@ const tiposDeErro = ['valueMissing', 'typeMismatch', 'patternMismatch', 'customE
 
 const mensagensDeErro = {
     nome: {
-        validMissing: 'O campo nome não pode estar vazio!'
+        valueMissing: 'O campo nome não pode estar vazio!'
     },
     email: {
-        validMissing: 'O campo de e-mail não pode estar vazio!',
+        valueMissing: 'O campo de e-mail não pode estar vazio!',
         typeMismatch: 'O e-mail digitado não é válido!'
     },
     senha: {
-        validMissing: 'O campo de senha não pode estar vazio!',
+        valueMissing: 'O campo de senha não pode estar vazio!',
         patternMismatch: 'A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiuscula, um número e não deve conter simbolos.'
     },
     dataNascimento: {
-        validMissing: 'O campo de data de nascimento não pode estar vazio!',
+        valueMissing: 'O campo de data de nascimento não pode estar vazio!',
         customError: 'Você deve ter mais de 18 anos para se cadastrar!'
     }
 }
