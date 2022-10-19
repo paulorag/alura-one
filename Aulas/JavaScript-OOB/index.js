@@ -1,6 +1,7 @@
 import { Cliente } from "./Cliente.js";
-import { ContaCorrente } from "./ContaCorrente.js";
-import { ContaPoupanca } from "./ContaPoupanca.js";
+import { ContaCorrente } from "./Conta/ContaCorrente.js";
+import { ContaPoupanca } from "./Conta/ContaPoupanca.js";
+import { ContaSalario } from "./Conta/ContaSalario.js";
 
 const cliente1 = new Cliente('Paulo', 11122233309);
 const cliente2 = new Cliente('Byanca', 88822233309);
@@ -17,3 +18,9 @@ contaPoupancaByanca.depositar(100);
 contaPoupancaByanca.sacar(10);
 
 console.log(contaPoupancaByanca);
+
+const contaSalario = new ContaSalario(cliente1);
+contaSalario.depositar(100);
+contaSalario.sacar(10);
+
+console.log(contaSalario);
