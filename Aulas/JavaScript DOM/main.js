@@ -1,27 +1,48 @@
-import BotaoConclui from './componentes/concluiTarefa.js'
-import BotaoDeleta from './componentes/deletaTarefa.js'
+import BotaoConclui from './componentes/concluiTarefa.js';
+import BotaoDeleta from './componentes/deletaTarefa.js';
 
-const criarTarefa = (evento) => {
+let tarefas = [];
 
-    evento.preventDefault()
+const handleNovoItem = (evento) => {
+    evento.preventDefault();
 
-    const lista = document.querySelector('[data-list]')
-    const input = document.querySelector('[data-form-input]')
-    const valor = input.value
+    const lista = document.querySelector('[data-list]');
+    const input = document.querySelector('[data-form-input]');
+    const valor = input.value;
 
-    const tarefa = document.createElement('li')
-    tarefa.classList.add('task')
-    const conteudo = `<p class="content">${valor}</p>`
+    const calendario = document.querySelector('[data-form-date]');
+    const data = moment(calendario.value);
+    const dataFormatada = data.format('DD/MM/YYYY');
 
-    tarefa.innerHTML = conteudo
+    const dados = {
+        valor,
+        dataFormatada
+    }
 
-    tarefa.appendChild(BotaoConclui())
-    tarefa.appendChild(BotaoDeleta())
-    lista.appendChild(tarefa)
-    input.value = " "
+    const criaTarefa = criarTarefa(dados);
+    tarefas.push(dados);
+
+    lista.appendChild(criaTarefa);
+
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
+
+    input.value = " ";
 
 }
 
-const novaTarefa = document.querySelector('[data-form-button]')
+const criarTarefa = ({ valor, dataFormatada }) => {
+    const tarefa = document.createElement('li');
+    tarefa.classList.add('task');
+    const conteudo = `<p class="content">${dataFormatada} * ${valor}</p>`;
 
-novaTarefa.addEventListener('click', criarTarefa)
+    tarefa.innerHTML = conteudo;
+
+    tarefa.appendChild(BotaoConclui());
+    tarefa.appendChild(BotaoDeleta());
+
+    return tarefa;
+}
+
+const novaTarefa = document.querySelector('[data-form-button]');
+
+novaTarefa.addEventListener('click', handleNovoItem);
