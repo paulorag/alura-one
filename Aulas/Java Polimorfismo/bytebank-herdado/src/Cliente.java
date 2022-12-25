@@ -1,10 +1,5 @@
 
-public class Gerente extends Funcionario implements Autenticavel {
-
-	public double getBonificacao() {
-		System.out.println("Chamando o método de bonificação do Gerente");
-		return super.getSalario();
-	}
+public class Cliente implements Autenticavel {
 
 	private int senha;
 
@@ -21,4 +16,5 @@ public class Gerente extends Funcionario implements Autenticavel {
 			return false;
 		}
 	}
+
 }
